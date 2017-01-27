@@ -7,6 +7,7 @@ Exports any of database connections to a Rest/HTTP API.
  * Access queries and procedures from HTTP request
  * Database connection pool
  * Output results in a Json, Xml or Yaml
+ * Custom connections for users
 
 # Supported Databases
 
