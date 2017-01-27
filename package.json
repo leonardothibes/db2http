@@ -21,6 +21,7 @@
   "scripts": {
     "test": "echo 'Nothing to show'"
   },
+  "preferGlobal": true,
   "readmeFilename": "README.md",
   "license": "MIT",
   "homepage": "https://github.com/leonardothibes/db2http#readme",
