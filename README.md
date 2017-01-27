@@ -98,10 +98,28 @@ db2http -c /path/to/alternate/config/file.conf
 
 # Examples
 
+### Input HTTP Form Encoded / Ouput Json
 ```bash
-curl -X POST "http://localhost:3000/dummy1.json" \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "query=select * from user where user_id = :id&user_id=1"
+curl -X POST 'http://localhost:3000/dummy1.json' \
+     -H 'Content-Type: application/x-www-form-urlencoded' \
+     -d 'query=select * from user where user_id = :id&id=1'
+```
+
+### Input Json / Ouput Xml
+```bash
+curl -X POST 'http://localhost:3000/dummy1.xml' \
+     -H 'Content-Type: application/json' \
+     -d '{
+         "query": "select * from user where user_id = :id",
+         "id"   : "1"
+     }'
+```
+
+### Input Xml / Ouput Yaml
+```bash
+curl -X POST 'http://localhost:3000/dummy1.yaml' \
+     -H 'Content-Type: application/xml' \
+     -d '<query id="1">select * from user where user_id = :id</query>'
 ```
 
 # Requirements
