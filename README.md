@@ -15,7 +15,6 @@ Exports any of database connections to a Rest/HTTP API.
  * MySQL/MariaDB
  * PostgreSQL
  * sqlite3
- * Oracle
 
 # Installation
 

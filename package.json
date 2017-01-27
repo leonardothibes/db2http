@@ -15,7 +15,12 @@
     "sql",
     "pool",
     "database",
-    "connection"
+    "connection",
+    "mysql",
+    "pgsql",
+    "mssql",
+    "sqlite",
+    "sqlite3"
   ],
   "bin": "./bin/db2http",
   "scripts": {
