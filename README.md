@@ -48,7 +48,7 @@ password = 12345678
 
 # Optional params
 database = test
-port = 3306
+port     = 3306
 # Optional params
 
 # Connection pooling params
