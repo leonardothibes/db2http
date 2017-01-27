@@ -14,6 +14,7 @@ Exports any of database connections to a Rest/HTTP API.
  * Microsoft SQL Server
  * MySQL/MariaDB
  * PostgreSQL
+ * sqlite3
  * Oracle
 
 # Installation
