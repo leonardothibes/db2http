@@ -7,6 +7,7 @@ Exports any of database connections to a Rest/HTTP API.
 ```bash
 npm install -g db2http
 ```
+
 # Features
 
  * Access queries and procedures from HTTP request
@@ -19,6 +20,50 @@ npm install -g db2http
  * MySQL/MariaDB
  * PostgreSQL
  * Oracle
+
+# Configuration
+
+Edit **/etc/db2http.conf** containing something like:
+
+```ini
+[global]
+
+# Params for all of the connections
+http_port          = 3000
+http_gzip          = true
+client_charset     = UTF-8
+connection_timeout = 30
+query_timeout      = 30
+log_dir            = /var/log/db2http
+# Params for all of the connections
+
+[dummy1]
+
+# Required params
+adapter  = mysql
+hostname = db-host.dummy.com
+username = root
+password = 12345678
+# Required params
+
+# Optional params
+database = test
+port = 3306
+# Optional params
+
+# Connection pooling params
+pool_min = 5
+pool_max = 10
+idle_timeout = 30000
+# Connection pooling params
+
+# Replacing global params
+connection_timeout = 10
+query_timeout      = 10
+log_dir            = /path/what/i/whant/dummy1
+# Replacing global params
+
+```
 
 # Contributors
 
