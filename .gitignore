@@ -9,6 +9,5 @@ Thumbs.db
 *.bak
 *.swp
 node_modules/*
-vendor/*
 build/*
-bin/*
+dist/*
