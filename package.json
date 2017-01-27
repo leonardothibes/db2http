@@ -4,7 +4,7 @@
   "description": "Exports any of database connections to a Rest/HTTP API",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonardothibes/db2http.git"
+    "url": "git://github.com/leonardothibes/db2http.git"
   },
   "author": {
     "name": "Leonardo Thibes",
@@ -19,9 +19,12 @@
   ],
   "bin": "./bin/db2http",
   "scripts": {
-    "test": "npm test"
+    "test": "echo 'Nothing to show'"
   },
   "readmeFilename": "README.md",
   "license": "MIT",
-  "homepage": "https://github.com/leonardothibes/db2http#readme"
+  "homepage": "https://github.com/leonardothibes/db2http#readme",
+  "dependencies": {
+    "cli": "^1.0.1"
+  }
 }
