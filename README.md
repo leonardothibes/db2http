@@ -125,7 +125,7 @@ curl -X POST 'http://localhost:3000/dummy1.yaml' \
 
 # Requirements
 
- * Node.js 0.12.x
+ * Node.js 0.10.x
 
 # Contributors
 
