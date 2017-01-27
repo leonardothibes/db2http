@@ -52,8 +52,8 @@ port     = 3306
 # Optional params
 
 # Connection pooling params
-pool_min = 5
-pool_max = 10
+pool_min     = 5
+pool_max     = 10
 idle_timeout = 30000
 # Connection pooling params
 
@@ -63,7 +63,30 @@ query_timeout      = 10
 log_dir            = /path/what/i/whant/dummy1
 # Replacing global params
 
+[another]
+
+# Required params
+adapter  = mssql
+hostname = another-host.dummy.com
+username = username
+password = 12345678
+# Required params
+
+# Optional params
+port = 1433
+
+# Specific driver options
+options_appName = myapp
+option_encrypt  = true
+options_utc     = true
+options_tdsver  = 7.4
+# Specific driver options
+
 ```
+
+# Requirements
+
+ * Node.js 0.12.x
 
 # Contributors
 
