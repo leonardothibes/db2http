@@ -1,2 +1,3 @@
-# db2http
-Exports any database connection to HTTP
+# DB2HTTP
+
+Exports any database connection to HTTP.
