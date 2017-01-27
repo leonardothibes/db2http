@@ -86,17 +86,21 @@ options_tdsver  = 7.4
 
 # Service starting
 
-```base
+```bash
 db2http
 ```
 
 or
 
-```base
+```bash
 db2http -c /path/to/alternate/config/file.conf
 ```
 
 # Examples
+
+```bash
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'query=select * from user where user_id = :id&user_id=1' "http://localhost:3000/dummy1.json"
+```
 
 # Requirements
 
