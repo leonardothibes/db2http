@@ -26,7 +26,7 @@
   "license": "MIT",
   "homepage": "https://github.com/leonardothibes/db2http#readme",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.10.0"
   },
   "dependencies": {
     "cli": "^1.0.1"
