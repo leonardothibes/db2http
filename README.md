@@ -2,12 +2,6 @@
 
 Exports any of database connections to a Rest/HTTP API.
 
-# Installation
-
-```bash
-npm install -g db2http
-```
-
 # Features
 
  * Access queries and procedures from HTTP request
@@ -20,6 +14,12 @@ npm install -g db2http
  * MySQL/MariaDB
  * PostgreSQL
  * Oracle
+
+# Installation
+
+```bash
+npm install -g db2http
+```
 
 # Configuration
 
@@ -83,6 +83,20 @@ options_tdsver  = 7.4
 # Specific driver options
 
 ```
+
+# Service starting
+
+```base
+db2http
+```
+
+or
+
+```base
+db2http -c /path/to/alternate/config/file.conf
+```
+
+# Examples
 
 # Requirements
 
